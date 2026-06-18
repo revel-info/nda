@@ -244,8 +244,8 @@
       <div class="company-sig" id="companySig">Kamil Dusejovsky</div>
       <p class="row"><span class="lab">Name / Jméno:</span> <b>Kamil Dusejovsky</b></p>
       <p class="row"><span class="lab">Title / Funkce:</span> <b>Founder</b></p>
-      <p class="note">Signing on behalf of REVEL Studios, Inc. and REVEL Robotics s.r.o. / Podepisuje jménem REVEL Studios, Inc. a REVEL Robotics s.r.o.</p>
       <p class="row"><span class="lab">Date / Datum:</span> <b id="companyDate"></b></p>
+      <p class="note">Signing on behalf of REVEL Studios, Inc. and REVEL Robotics s.r.o. / Podepisuje jménem REVEL Studios, Inc. a REVEL Robotics s.r.o.</p>
     </div>
 
     <!-- Recipient signing -->
@@ -544,9 +544,9 @@
 
     para(rt(rows[1]), { size: 9, color: INK, x: ix, w: iw, gap: 1.5 }); // Name
     para(rt(rows[2]), { size: 9, color: INK, x: ix, w: iw, gap: 1.5 }); // Title
+    para(rt(rows[3]), { size: 9, color: INK, x: ix, w: iw, gap: 1.5 }); // Date
     para(document.querySelector('.sigblock .note').textContent.trim(),
       { size: 8, style: 'italic', color: SOFT, x: ix, w: iw, gap: 2 });
-    para(rt(rows[3]), { size: 9, color: INK, x: ix, w: iw, gap: 1.5 }); // Date
 
     var boxBottom = y + padY - 2;
     doc.setDrawColor(INK[0], INK[1], INK[2]); doc.setLineWidth(0.3);
